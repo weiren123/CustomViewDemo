@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="common_child_view" type="id" />
+    <attr name="commonStyleMyRecycleView" format="reference" />
+
+    <declare-styleable name="CommonMyRecycleView">
+        <!-- 加载中的布局id -->
+        <attr name="commonChildView" format="reference" />
+    </declare-styleable>
+
+    <style name="CommonMyRecycleView">
+
+    </style>
+    <style name="CommonMyRecycleView.Style">
+        <item name="commonChildView">@layout/common_child_item</item>
+    </style>
+
+</resources>

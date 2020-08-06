@@ -1,0 +1,2 @@
+include ':app', ':lib-customview'
+rootProject.name='CustomViewDemo'
