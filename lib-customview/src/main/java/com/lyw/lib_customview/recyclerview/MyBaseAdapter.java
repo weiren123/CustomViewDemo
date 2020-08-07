@@ -1,10 +1,10 @@
 package com.lyw.lib_customview.recyclerview;
 
+import androidx.annotation.Nullable;
+
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.viewholder.BaseViewHolder;
 
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 public class MyBaseAdapter extends BaseQuickAdapter<BaseCustomViewModel,BaseViewHolder> {
 
@@ -14,7 +14,7 @@ public class MyBaseAdapter extends BaseQuickAdapter<BaseCustomViewModel,BaseView
         super(layoutResId);
     }
     @Override
-    protected void convert(@NotNull BaseViewHolder vh, @Nullable BaseCustomViewModel t) {
+    protected void convert(@Nullable BaseViewHolder vh, @Nullable BaseCustomViewModel t) {
         if(vhData!=null){
             vhData.setVHData(vh,t);
         }

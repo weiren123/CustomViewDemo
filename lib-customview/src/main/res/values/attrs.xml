@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="UniversalTextView">
+        <attr name="labe_backgroud" format="color" />
+        <attr name="labeRadius" format="dimension" />
+        <attr name="labeText" format="string" />
+        <attr name="labeType" format="integer" />
+        <attr name="addLable" format="boolean" />
+        <attr name="lableText" format="string" />
+        <attr name="lableBg" format="color" />
+        <attr name="lableShowType" format="integer" />
+        <attr name="lableRightmargin" format="integer" />
+    </declare-styleable>
+</resources>

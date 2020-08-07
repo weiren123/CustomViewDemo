@@ -5,10 +5,76 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    <com.lyw.lib_customview.universaltextview.UniversalTextView
+        android:id="@+id/tv_lable"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="@string/content"
+        app:addLable="true"
+        app:labeText="推荐"
+        app:lableBg="@color/color_8BC34A"
+        app:lableShowType="0"
+        />
+    <com.lyw.lib_customview.universaltextview.UniversalTextView
+        android:id="@+id/tv_lable2"
+        app:layout_constraintTop_toBottomOf="@id/tv_lable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="@string/content"
+        app:labe_backgroud="@color/base_colorPrimary"
+        app:labeRadius="20dp"
+        app:addLable="true"
+        app:labeText="推荐"
+        app:lableBg="@color/color_8BC34A"
+        app:lableShowType="1"
+        />
+    <com.lyw.lib_customview.universaltextview.UniversalTextView
+        android:id="@+id/tv_lable3"
+        app:layout_constraintTop_toBottomOf="@id/tv_lable2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="可是看到了来扣扣"
+        app:labe_backgroud="@color/color_8BC34A"
+        app:labeType="2"
+        app:labeRadius="20dp"
+        app:addLable="true"
+        app:labeText="推荐"
+        app:lableBg="@color/color_8BC34A"
+        app:lableShowType="2"
+        />
+    <com.lyw.lib_customview.universaltextview.UniversalTextView
+        android:id="@+id/tv_lable4"
+        app:layout_constraintTop_toBottomOf="@id/tv_lable3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:text="标签"
+        app:labe_backgroud="@color/color_8BC34A"
+        app:labeType="2"
+        app:labeRadius="8dp"
+        app:lableShowType="2"
+        />
+    <com.lyw.lib_customview.universaltextview.UniversalTextView
+        android:id="@+id/tv_lable5"
+        app:layout_constraintTop_toBottomOf="@id/tv_lable3"
+        app:layout_constraintLeft_toRightOf="@id/tv_lable4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:text="标签"
+        app:labe_backgroud="@color/color_8BC34A"
+        app:labeType="0"
+        app:labeRadius="8dp"
+        />
     <com.lyw.lib_customview.recyclerview.MyRecycleview
-            android:id="@+id/recycleview"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:commonChildView = "@layout/home_child_item"/>
-
+        android:id="@+id/recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:commonChildView = "@layout/home_child_item"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
