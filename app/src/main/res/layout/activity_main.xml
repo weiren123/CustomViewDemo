@@ -73,8 +73,13 @@
         />
     <com.lyw.lib_customview.recyclerview.MyRecycleview
         android:id="@+id/recycleview"
+        app:layout_constraintTop_toBottomOf="@id/tv_lable3"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:visibility="gone"
+        android:layout_height="wrap_content"
         app:commonChildView = "@layout/home_child_item"/>
+    <com.lyw.lib_customview.recyclerview.AutoScrollReccycleView
+        app:layout_constraintTop_toBottomOf="@id/recycleview"
+        android:id="@+id/recycleview2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

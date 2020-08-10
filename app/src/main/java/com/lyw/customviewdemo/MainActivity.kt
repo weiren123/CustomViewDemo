@@ -2,6 +2,8 @@ package com.lyw.customviewdemo
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.lyw.lib_customview.recyclerview.AutoPollAdapter
 import com.lyw.lib_customview.recyclerview.BaseCustomViewModel
 import com.lyw.lib_customview.universaltextview.LableAttrBean
 import kotlinx.android.synthetic.main.activity_main.*
@@ -44,5 +46,13 @@ class MainActivity : AppCompatActivity() {
         }
         recycleview.setData(array)
         recycleview.setConvert { vh, t -> vh?.setText(R.id.text,t?.type) }
+
+        var array2 = ArrayList<String>()
+        for (i in 0..4){
+            array2.add("test$i")
+        }
+        recycleview2.layoutManager = LinearLayoutManager(this)
+        recycleview2.adapter = AutoPollAdapter(this,array2)
+        recycleview2.start()
     }
 }
